@@ -1,0 +1,67 @@
+.site-header {
+  background-color: #DDD;
+
+  .custom-logo {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+//Menu
+.main-menu {
+  @media (min-width: $lg) {
+    list-style-type: none;
+    display: flex;
+    margin-bottom: 0;
+    margin-right: 10px;
+
+    a {
+      color: $color__white;
+      text-decoration: none;
+    }
+
+    li {
+      position: relative;
+    }
+
+    &>li {
+      padding: 9px 16px;
+      border-radius: 4px;
+      border: 1px solid transparent;
+
+      &:hover {
+        border: 1px solid orange;
+      }
+    }
+
+    &>li.active {
+      border: 1px solid orange;
+    }
+
+    &>li:hover ul {
+      display: block;
+    }
+
+    li ul {
+      width: 220px;
+      background-color: orange;
+      border-radius: 4px;
+      padding: 20px 25px;
+      list-style-type: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      display: none;
+    }
+
+    li ul li {
+      margin-bottom: 10px;
+    }
+  }
+
+}
+
+//Footer
+.site-footer {
+  background-color: #DDD;
+}
